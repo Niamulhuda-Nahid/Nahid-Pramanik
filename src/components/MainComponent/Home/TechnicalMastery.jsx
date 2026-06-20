@@ -17,7 +17,7 @@ export default function TechnicalMastery() {
   };
 
   return (
-    <section className="relative w-full bg-[#0a0f1d] py-16 px-6 md:py-24 text-white overflow-hidden">
+    <section className="relative w-full py-16 px-6 md:py-24 text-white overflow-hidden">
       {/* Structural ambient decorative background */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-150 h-150 bg-cyan-500/5 rounded-full blur-[150px] pointer-events-none" />
 

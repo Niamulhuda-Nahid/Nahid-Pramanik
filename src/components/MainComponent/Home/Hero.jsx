@@ -28,7 +28,7 @@ export default function Hero() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1]">
             Hi, I'm{" "}
             <span className="text-transparent bg-clip-text bg-linear-to-r from-teal-400 to-cyan-300">
-              John Doe
+              Nahid Pramanik
             </span>
             <br />
             <span className="text-slate-100">
@@ -76,7 +76,7 @@ export default function Hero() {
           {/* Glow */}
           {/* <div className="absolute w-[80%] h-[80%] rounded-full bg-linear-to-tr from-teal-500/10 to-transparent blur-2xl animate-pulse-glow" /> */}
           <img
-            src="https://i.ibb.co.com/myf3YBB/istockphoto-1298088270-612x612.jpg"
+            src="https://i.ibb.co.com/qB0rY0d/IMG-5683.jpg"
             alt="Profile"
             className="w-full h-full object-cover rounded-3xl"
           />

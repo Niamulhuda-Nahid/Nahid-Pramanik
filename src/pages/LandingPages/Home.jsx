@@ -1,5 +1,7 @@
 import BridgingTheGap from "@/components/MainComponent/Home/BridgingTheGap";
+import CoreServices from "@/components/MainComponent/Home/CoreServices";
 import Hero from "@/components/MainComponent/Home/Hero";
+import ProfessionalJourney from "@/components/MainComponent/Home/ProfessionalJourney";
 import TechnicalMastery from "@/components/MainComponent/Home/TechnicalMastery";
 
 const MinimalHero = () => {
@@ -9,6 +11,8 @@ const MinimalHero = () => {
       <Hero />
       <BridgingTheGap />
       <TechnicalMastery />
+      <ProfessionalJourney />
+      <CoreServices />
     </div>
   );
 };
