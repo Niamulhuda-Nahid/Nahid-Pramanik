@@ -13,7 +13,7 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 
 export default function ContactForm() {
-  const { form, onSubmit } = useSubmitContact();
+  const { form, onSubmit, isSubmitting } = useSubmitContact();
 
   return (
     <div>
@@ -103,8 +103,9 @@ export default function ContactForm() {
           <Button
             type="submit"
             className="w-full h-15 text-lg font-semibold cursor-pointer text-[#050B14] flex items-center justify-center rounded-lg bg-[#5ce1e6]!"
+            disabled={isSubmitting}
           >
-            Send Message
+             {isSubmitting ? "Sending..." : "Let's Connect"}
           </Button>
         </form>
       </Form>
