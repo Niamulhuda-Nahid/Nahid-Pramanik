@@ -28,7 +28,7 @@ export default function Hero() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1]">
             Hi, I'm{" "}
             <span className="text-transparent bg-clip-text bg-linear-to-r from-teal-400 to-cyan-300">
-              Nahid Pramanik
+              John Doe
             </span>
             <br />
             <span className="text-slate-100">
@@ -59,14 +59,14 @@ export default function Hero() {
           <div>
             <a
               href="#_"
-              class="relative items-center justify-start inline-block px-5 py-3 overflow-hidden font-bold rounded-lg group"
+              className="relative items-center justify-start inline-block px-5 py-3 overflow-hidden font-bold rounded-lg group"
             >
-              <span class="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-[#7ed5cf] opacity-3"></span>
-              <span class="absolute top-0 left-0 w-52 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-[#7ed5cf] opacity-100 group-hover:-translate-x-8"></span>
-              <span class="relative w-full text-left text-[#7ed5cf] transition-colors duration-200 ease-in-out group-hover:text-gray-900 px-4">
+              <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-[#7ed5cf] opacity-3"></span>
+              <span className="absolute top-0 left-0 w-52 h-48 -mt-1 transition-all duration-500 ease-in-out rotate-45 -translate-x-56 -translate-y-24 bg-[#7ed5cf] opacity-100 group-hover:-translate-x-8"></span>
+              <span className="relative w-full text-left text-[#7ed5cf] transition-colors duration-200 ease-in-out group-hover:text-gray-900 px-4">
                 All Projects
               </span>
-              <span class="absolute inset-0 border-2 border-[#7ed5cf] rounded-lg"></span>
+              <span className="absolute inset-0 border-2 border-[#7ed5cf] rounded-lg"></span>
             </a>
           </div>
         </div>
@@ -76,7 +76,7 @@ export default function Hero() {
           {/* Glow */}
           {/* <div className="absolute w-[80%] h-[80%] rounded-full bg-linear-to-tr from-teal-500/10 to-transparent blur-2xl animate-pulse-glow" /> */}
           <img
-            src="https://i.ibb.co.com/qB0rY0d/IMG-5683.jpg"
+            src="https://i.ibb.co.com/VvPKZxC/360-F-635201516-G2-TFp-FPo-FA6ut-XYNg-Flg-PJGw-U24mj6-CJ.jpg"
             alt="Profile"
             className="w-full h-full object-cover rounded-3xl"
           />
