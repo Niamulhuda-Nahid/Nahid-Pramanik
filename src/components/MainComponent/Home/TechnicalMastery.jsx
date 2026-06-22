@@ -37,7 +37,7 @@ export default function TechnicalMastery() {
 
         {/* Categories Grid */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 w-full">
-          {masteryCards.map((card, idx) => (
+          {masteryCards.map((card) => (
             <div
               key={card.id}
               className="bg-[#111827]/30 border border-slate-800/90 rounded-[28px] p-8 md:p-10 backdrop-blur-md shadow-2xl relative transition-all duration-300 hover:border-slate-700/60 hover:-translate-y-1 group"

@@ -47,7 +47,7 @@ export default function Footer() {
             href="#contact"
             className="hover:text-zinc-100 transition-colors duration-200 font-medium"
           >
-            Contact
+            Blog
           </a>
         </nav>
 
@@ -62,7 +62,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://github.com/yourusername"
+            href="https://github.com/Niamulhuda-Nahid"
             target="_blank"
             rel="noreferrer"
             aria-label="GitHub"

@@ -6,6 +6,7 @@ import Home from "@/pages/LandingPages/Home";
 import LogIn from "@/pages/AuthPages/LogIn";
 import Overview from "@/pages/DashboardPages/Overview";
 import { GoArrowRight } from "react-icons/go";
+import ProjectDetails from "@/pages/LandingPages/ProjectDetails";
 
 const router = createBrowserRouter([
   {
@@ -55,6 +56,10 @@ const router = createBrowserRouter([
       {
         index: true,
         element: <Home />,
+      },
+      {
+        path: "/projects/:id",
+        element: <ProjectDetails />,
       },
     ],
   },
