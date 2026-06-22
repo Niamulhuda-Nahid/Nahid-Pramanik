@@ -4,8 +4,16 @@ import { navLinks } from "./navLinks";
 export default function DesktopNav({
   activeSection,
   scrollToSection,
-  setShowCvModal,
 }) {
+  const handleDownloadCV = () => {
+    const link = document.createElement("a");
+    link.href = "/public/Niamulhuda-Nahid.pdf";
+    link.download = "Niamulhuda-Nahid.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <div className="hidden md:flex items-center gap-10">
       {/* NAV LINKS */}
@@ -22,8 +30,8 @@ export default function DesktopNav({
 
       {/* CTA BUTTON */}
       <button
-        onClick={() => setShowCvModal(true)}
-        className="relative overflow-hidden rounded-full bg-[#4FD1C5] px-5 py-2 text-sm font-bold text-[#0B0F17] shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#3ec3b7] hover:shadow-[#4FD1C5]/20 active:translate-y-0"
+        onClick={handleDownloadCV}
+        className="relative overflow-hidden rounded-full bg-[#4FD1C5] px-5 py-2 text-sm font-bold text-[#0B0F17] shadow-lg transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#3ec3b7] hover:shadow-[#4FD1C5]/20 active:translate-y-0 cursor-pointer"
       >
         Download CV
       </button>

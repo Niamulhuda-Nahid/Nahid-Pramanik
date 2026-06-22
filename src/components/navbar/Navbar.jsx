@@ -6,7 +6,7 @@ import MobileNav from "./MobileNav";
 import { Link } from "react-router-dom";
 import brand_logo from "@/assets/Images/brand-logo.png"
 
-export default function Navbar({ setShowCvModal }) {
+export default function Navbar() {
   const { activeSection, scrollToSection } = useActiveSection();
 
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -26,7 +26,6 @@ export default function Navbar({ setShowCvModal }) {
         <DesktopNav
           activeSection={activeSection}
           scrollToSection={scrollToSection}
-          setShowCvModal={setShowCvModal}
         />
 
         {/* MOBILE NAV */}
@@ -35,7 +34,6 @@ export default function Navbar({ setShowCvModal }) {
           setOpen={setMobileOpen}
           activeSection={activeSection}
           scrollToSection={scrollToSection}
-          setShowCvModal={setShowCvModal}
         />
       </div>
     </header>
