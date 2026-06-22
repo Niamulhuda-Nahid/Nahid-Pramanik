@@ -1,12 +1,12 @@
 import React from "react";
 import ProjectCard from "@/components/common/ProjectCard";
-import { projects } from "@/lib/Projects";
+import { projects } from "@/lib/projects";
 
 export default function SelectedWork() {
   return (
     <section className='className="bg-[#050B14] text-slate-100 py-16 overflow-hidden"'>
       <div className="max-w-7xl mx-auto flex flex-col items-center">
-        <div className="text-center mb-16 md:mb-20 max-w-2xl">
+        <div className="text-center mb-10 md:mb-14 max-w-2xl">
           <h2 className="text-3xl md:text-4xl font-extrabold tracking-tight">
             Selected{" "}
             <span className="bg-linear-to-r from-[#5ce1e6] to-[#2dd4bf] bg-clip-text text-transparent">

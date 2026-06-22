@@ -1,4 +1,4 @@
-import { projects } from "@/lib/Projects";
+import { projects } from "@/lib/projects";
 import { ExternalLink } from "lucide-react";
 import React from "react";
 import { FaGithub } from "react-icons/fa6";

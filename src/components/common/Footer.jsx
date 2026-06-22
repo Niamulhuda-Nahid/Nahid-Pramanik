@@ -2,6 +2,8 @@ import React from "react";
 import { Mail, } from "lucide-react";
 import { SiGithub } from "react-icons/si";
 import { FaLinkedinIn } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import brand_logo from "@/assets/Images/brand-logo.png"
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -11,19 +13,15 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-center md:justify-between gap-8">
         {/* Left Side */}
         <div className="flex flex-col space-y-2">
-          <a
-            href="#home"
+          <Link
+            to="/"
             className="text-2xl font-bold tracking-wider text-[#5ce1e6] text-center md:text-left"
           >
-            DEV
-            <span className="text-cyan-300 group-hover:text-white">
-              _
-            </span>
-           CORE
-          </a>
+           <img src={brand_logo} alt="Brand Logo" className="h-12" />
+          </Link>
 
           <p className="text-xs text-zinc-300 tracking-wide">
-            © {currentYear} DEV_CORE. All rights reserved.
+            © {currentYear} Nahid Pramanik. All rights reserved.
           </p>
         </div>
 
@@ -72,7 +70,7 @@ export default function Footer() {
           </a>
 
           <a
-            href="https://linkedin.com/in/yourusername"
+            href="https://www.linkedin.com/in/md-niamulhuda-nahid-084a22334"
             target="_blank"
             rel="noreferrer"
             aria-label="LinkedIn"

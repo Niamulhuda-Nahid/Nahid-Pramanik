@@ -4,6 +4,7 @@ import useActiveSection from "@/hooks/useActiveSection";
 import DesktopNav from "./DesktopNav";
 import MobileNav from "./MobileNav";
 import { Link } from "react-router-dom";
+import brand_logo from "@/assets/Images/brand-logo.png"
 
 export default function Navbar({ setShowCvModal }) {
   const { activeSection, scrollToSection } = useActiveSection();
@@ -18,7 +19,7 @@ export default function Navbar({ setShowCvModal }) {
           to="/"
           className="cursor-pointer select-none text-2xl font-black tracking-wider text-[#4FD1C5] font-mono"
         >
-          DEV<span className="animate-pulse">_</span>CORE
+          <img src={brand_logo} alt="Brand Logo" className="h-12" />
         </Link>
 
         {/* DESKTOP NAV */}
