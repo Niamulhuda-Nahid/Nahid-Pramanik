@@ -20,9 +20,9 @@ export default function MobileNav({
     setOpen(false); // auto close drawer
   };
 
-    const handleDownloadCV = () => {
+  const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/public/Niamulhuda-Nahid.pdf";
+    link.href = "/Niamulhuda-Nahid.pdf";
     link.download = "Niamulhuda-Nahid.pdf";
     document.body.appendChild(link);
     link.click();

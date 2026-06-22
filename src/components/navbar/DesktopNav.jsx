@@ -7,7 +7,7 @@ export default function DesktopNav({
 }) {
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/public/Niamulhuda-Nahid.pdf";
+    link.href = "/Niamulhuda-Nahid.pdf";
     link.download = "Niamulhuda-Nahid.pdf";
     document.body.appendChild(link);
     link.click();
