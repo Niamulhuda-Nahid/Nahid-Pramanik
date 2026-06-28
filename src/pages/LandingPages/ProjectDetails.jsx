@@ -1,13 +1,15 @@
 import { projects } from "@/lib/projects";
+import { useGetProjectBySlugQuery } from "@/Redux/endpoints/projectsApi";
 import { ExternalLink } from "lucide-react";
 import React from "react";
 import { FaGithub } from "react-icons/fa6";
 import { useParams } from "react-router-dom";
 
 export default function ProjectDetails() {
-  const { id } = useParams();
+  const { slug } = useParams();
 
-  const project = projects.find((item) => parseInt(item.id) === parseInt(id));
+  const { data, isLoading } = useGetProjectBySlugQuery(slug);
+  const project = data?.data;
 
   if (!project) {
     return (
@@ -21,7 +23,7 @@ export default function ProjectDetails() {
     <section className="py-20 text-white">
       <div className="px-4 mx-auto max-w-7xl">
         <img
-          src={project.banner}
+          src={project.banner.url}
           alt={project.title}
           className="w-full rounded-3xl mb-10"
         />
@@ -113,10 +115,10 @@ export default function ProjectDetails() {
         <h2 className="text-3xl font-bold mb-5 text-[#5ce1e6]">Gallery</h2>
 
         <div className="grid md:grid-cols-2 gap-6">
-          {project.gallery.map((image) => (
+          {project.gallery.map((data) => (
             <img
-              key={image}
-              src={image}
+              key={data?.public_id}
+              src={data?.url}
               alt={"Project Gallery"}
               className="rounded-2xl overflow-hidden border border-slate-700/90"
             />

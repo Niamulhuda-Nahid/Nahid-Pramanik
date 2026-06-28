@@ -9,21 +9,21 @@ export default function ProjectCard({ project }) {
 
       <div className="overflow-hidden">
         <img
-          src={project.thumbnail}
-          alt={project.title}
+          src={project?.thumbnail?.url}
+          alt={project?.title}
           className="h-72 w-full object-cover"
         />
       </div>
 
       <div className="p-4">
-        <h3 className="mt-2 text-2xl font-bold">{project.title}</h3>
+        <h3 className="mt-2 text-2xl font-bold">{project?.title}</h3>
 
         <p className="mt-3 text-gray-300 line-clamp-3">
-          {project.shortDescription}
+          {project?.shortDescription}
         </p>
 
         <Link
-          to={`/projects/${project.id}`}
+          to={`/projects/${project?.slug}`}
           className="relative items-center justify-start inline-block px-5 py-3 overflow-hidden font-bold rounded-lg group w-full mt-6"
         >
           <span className="w-32 h-32 rotate-45 translate-x-12 -translate-y-2 absolute left-0 top-0 bg-[#7ed5cf] opacity-3"></span>

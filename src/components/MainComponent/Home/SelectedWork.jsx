@@ -1,8 +1,10 @@
 import React from "react";
 import ProjectCard from "@/components/common/ProjectCard";
-import { projects } from "@/lib/projects";
+import { useGetAllFeaturedProjectsQuery } from "@/Redux/endpoints/projectsApi";
 
 export default function SelectedWork() {
+  const { data: featuredProjects } = useGetAllFeaturedProjectsQuery();
+  const projects = featuredProjects?.data || [];
   return (
     <section className='className="bg-[#050B14] text-slate-100 py-16 overflow-hidden"'>
       <div className="max-w-7xl mx-auto flex flex-col items-center">

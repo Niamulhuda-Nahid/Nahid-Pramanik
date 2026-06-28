@@ -78,38 +78,9 @@ export const projects = [
   client: "Confidential",
   status: "Completed",
 
-  technologies: [
-    "React",
-    "JavaScript",
-    "Tailwind CSS",
-    "Redux Toolkit",
-    "REST API",
-    "AI Integration",
-    "SMS Integration",
-    "Email Integration",
-    "QR Code Generator",
-    "Chart Analytics",
-    "Responsive Design"
-  ],
+  technologies: ["React","JavaScript","Tailwind CSS","Redux Toolkit","REST API","AI Integration","SMS Integration","Email Integration","QR Code Generator","Chart Analytics","Responsive Design"],
 
-  features: [
-    "AI Campaign Generator",
-    "Campaign Creation & Management",
-    "Restaurant Marketing Automation",
-    "Customer Management Dashboard",
-    "QR Code Customer Acquisition",
-    "SMS Campaign Delivery",
-    "Email Campaign Delivery",
-    "Customer Segmentation",
-    "Campaign Scheduling",
-    "Campaign Performance Analytics",
-    "Logo Upload & Brand Customization",
-    "Unlimited Campaign Support",
-    "Customer Engagement Tracking",
-    "Responsive Admin Dashboard",
-    "Role-Based Access Management",
-    "Real-Time Campaign Monitoring"
-  ],
+  features: ["AI Campaign Generator","Campaign Creation & Management","Restaurant Marketing Automation","Customer Management Dashboard","QR Code Customer Acquisition","SMS Campaign Delivery","Email Campaign Delivery","Customer Segmentation","Campaign Scheduling","Campaign Performance Analytics","Logo Upload & Brand Customization","Unlimited Campaign Support","Customer Engagement Tracking","Responsive Admin Dashboard","Role-Based Access Management","Real-Time Campaign Monitoring"],
 
   challenges: [
     "Building a scalable campaign management workflow",
@@ -158,39 +129,9 @@ export const projects = [
   client: "Confidential",
   status: "Completed",
 
-  technologies: [
-    "React",
-    "JavaScript",
-    "Tailwind CSS",
-    "Redux Toolkit",
-    "REST API",
-    "Stripe",
-    "Socket.io",
-    "Real-Time Messaging",
-    "Role-Based Access Control",
-    "Responsive Design"
-  ],
+  technologies: ["React","JavaScript","Tailwind CSS","Redux Toolkit","REST API","Stripe","Socket.io","Real-Time Messaging","Role-Based Access Control","Responsive Design"],
 
-  features: [
-    "Client, Freelancer & Super Admin Roles",
-    "Gig Creation & Publishing",
-    "Gig Search & Discovery",
-    "Service Categories & Filtering",
-    "Order Placement & Management",
-    "Real-Time Chat System",
-    "Stripe Payment Integration",
-    "Order Progress Tracking",
-    "Freelancer Dashboard",
-    "Client Dashboard",
-    "Super Admin Dashboard",
-    "Delivery Approval Workflow",
-    "Admin Review Queue",
-    "Order Revision Requests",
-    "Notifications System",
-    "User Profile Management",
-    "Secure Authentication",
-    "Responsive Marketplace Experience"
-  ],
+  features: ["Client, Freelancer & Super Admin Roles","Gig Creation & Publishing","Gig Search & Discovery","Service Categories & Filtering","Order Placement & Management","Real-Time Chat System","Stripe Payment Integration","Order Progress Tracking","Freelancer Dashboard","Client Dashboard","Super Admin Dashboard","Delivery Approval Workflow","Admin Review Queue","Order Revision Requests","Notifications System","User Profile Management","Secure Authentication","Responsive Marketplace Experience"],
 
   gallery: [
     secaax_gallery_1,
