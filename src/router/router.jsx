@@ -8,6 +8,7 @@ import Overview from "@/pages/DashboardPages/Overview";
 import { GoArrowRight } from "react-icons/go";
 import ProjectDetails from "@/pages/LandingPages/ProjectDetails";
 import PrivateRouter from "./PrivateRouter";
+import ProjectsPage from "@/pages/DashboardPages/ProjectsPage";
 
 const router = createBrowserRouter([
   {
@@ -62,7 +63,7 @@ const router = createBrowserRouter([
       },
       {
         path: "projects",
-        element: <PrivateRouter><div>Project management page</div></PrivateRouter>,
+        element: <PrivateRouter><ProjectsPage /></PrivateRouter>,
       },
       {
         path: "skills",
