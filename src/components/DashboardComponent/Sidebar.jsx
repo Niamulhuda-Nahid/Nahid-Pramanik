@@ -1,5 +1,4 @@
 import React from "react";
-import SidebarItem from "./SidebarItem";
 import {
   LayoutDashboard,
   Users,
@@ -9,28 +8,13 @@ import {
   Loader,
 } from "lucide-react";
 import logo from "@/assets/Images/brand-logo.png";
-import logo2 from "/public/np.png";
+import logo2 from "/np.png";
 import { Link, useNavigate } from "react-router-dom";
 import toast from "react-hot-toast";
+import SidebarItem from "./SidebarItem";
 
 export default function Sidebar({ isOpen, isMobile, toggleSidebar }) {
-  const navigate = useNavigate();
-
-  const handleLogout = async () => {
-    toast.loading("Logging out...");
-    try {
-      const response = await userLogout({ refresh }).unwrap();
-      console.log("Logout response:", response);
-      toast.dismiss();
-      toast.success("Logout successful!");
-      navigate("/");
-    } catch (error) {
-      console.error("Logout failed:", error);
-      toast.dismiss();
-      toast.error("Logout failed.");
-    }
-  };
-
+  
   return (
     <>
       {/* Overlay */}
@@ -93,17 +77,17 @@ const sidebarItems = [
   {
     label: "Projects",
     icon: LayoutDashboard,
-    to: "/dashboard/projects",
+    to: "/admin/projects",
   },
   {
     label: "Skills",
     icon: Users,
-    to: "/dashboard/skills",
+    to: "/admin/skills",
   },
   {
     label: "Education",
     icon: QrCode,
-    to: "/dashboard/education&experience",
+    to: "/admin/education&experience",
   },
   // {
   //   label: "Campaigns",

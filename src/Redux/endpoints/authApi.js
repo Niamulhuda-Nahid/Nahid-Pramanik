@@ -6,7 +6,7 @@ export const authApi = baseApi.injectEndpoints({
     // login endpoint
     userLogin: build.mutation({
       query: (data) => ({
-        url: "/login/",
+        url: "/auth/login",
         method: "POST",
         body: data,
       }),
@@ -14,14 +14,13 @@ export const authApi = baseApi.injectEndpoints({
       async onQueryStarted(_, { dispatch, queryFulfilled }) {
         try {
           const { data } = await queryFulfilled;
+          const expiresAt = Date.now() + 24 * 60 * 60 * 1000;
 
           dispatch(
             storeUserInfo({
-              token: data.data.tokens.access || "",
-              refreshToken: data.data.tokens.refresh || "",
-              user: data.data.user || null,
-              accessTokenExpiresAt:
-                new Date(data.data.tokens.access_expires_at).getTime() || null,
+              token: data.token || "",
+              user: data.data || null,
+              accessTokenExpiresAt: expiresAt,
             }),
           );
         } catch (error) {
@@ -96,10 +95,9 @@ export const authApi = baseApi.injectEndpoints({
 
     // logout endpoint
     userLogout: build.mutation({
-      query: (refresh) => ({
-        url: "/logout/",
+      query: () => ({
+        url: "/auth/logout",
         method: "POST",
-        body: refresh,
       }),
       invalidatesTags: ["auth"],
       async onQueryStarted(_, { dispatch, queryFulfilled }) {
@@ -154,7 +152,7 @@ export const authApi = baseApi.injectEndpoints({
       async onQueryStarted(_, { dispatch, queryFulfilled }) {
         try {
           const { data } = await queryFulfilled;
-          dispatch(updateUserInfo(data.data));
+          dispatch(updateUserInfo(data.user));
         } catch (error) {
           console.log("Error updating user info:", error);
         }

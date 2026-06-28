@@ -29,8 +29,8 @@ export default function SidebarItem({
           isDisabled
             ? "opacity-40 cursor-not-allowed"
             : isActive
-            ? "bg-[#181307] text-primary"
-            : "text-[#919EAB] hover:bg-[#191919] hover:text-gray-300"
+            ? "bg-primary/20 text-primary"
+            : "text-[#919EAB] hover:bg-primary/10 hover:text-primary"
         }`
       }
     >
@@ -42,7 +42,7 @@ export default function SidebarItem({
                 ? "opacity-40"
                 : isActive
                 ? "text-primary"
-                : "group-hover:text-gray-300"
+                : "group-hover:text-primary"
             }
           />
 

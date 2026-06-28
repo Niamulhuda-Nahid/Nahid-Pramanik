@@ -4,7 +4,6 @@ const initialState = {
   token: null,
   user: null,
   accessTokenExpiresAt: null,
-  refreshToken: null,
 };
 
 export const authSlice = createSlice({
@@ -15,7 +14,6 @@ export const authSlice = createSlice({
       state.token = action.payload.token || "";
       state.user = action.payload.user || null;
       state.accessTokenExpiresAt = action.payload.accessTokenExpiresAt || null;
-      state.refreshToken = action.payload.refreshToken || null;
     },
     updateUserInfo: (state, action) => {
       // use this after profile update
@@ -25,7 +23,6 @@ export const authSlice = createSlice({
       state.token = null;
       state.user = null;
       state.accessTokenExpiresAt = null;
-      state.refreshToken = null;
     },
   },
 });

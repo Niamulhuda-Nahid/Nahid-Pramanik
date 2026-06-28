@@ -7,7 +7,6 @@ import { Outlet, useLocation } from "react-router-dom";
 
 export default function DashboardLayout() {
   const { pathname } = useLocation();
-  console.log("Current Pathname:", pathname); // Debugging line to check the current pathname
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
   const [isMobile, setIsMobile] = useState(false);
 

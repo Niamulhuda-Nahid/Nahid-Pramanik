@@ -7,6 +7,7 @@ import LogIn from "@/pages/AuthPages/LogIn";
 import Overview from "@/pages/DashboardPages/Overview";
 import { GoArrowRight } from "react-icons/go";
 import ProjectDetails from "@/pages/LandingPages/ProjectDetails";
+import PrivateRouter from "./PrivateRouter";
 
 const router = createBrowserRouter([
   {
@@ -36,20 +37,6 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "auth",
-    element: <AuthLayout />,
-    children: [
-      {
-        index: true,
-        element: <Navigate to="login" replace />,
-      },
-      {
-        path: "login",
-        element: <LogIn />,
-      },
-    ],
-  },
-  {
     path: "/",
     element: <MainLayout />,
     children: [
@@ -65,29 +52,25 @@ const router = createBrowserRouter([
   },
   {
     path: "/admin",
-    element: <DashboardLayout />,
+    element: (
+        <DashboardLayout />
+    ),
     children: [
       {
         index: true,
         element: <LogIn />,
       },
       {
-        path: "skills",
-        element: <div>nahid</div>
-      }
-    ]
-  },
-  {
-    path: "/dashboard",
-    element: <DashboardLayout />,
-    children: [
-      {
-        index: true,
-        element: <Navigate to="overview" replace />,
+        path: "projects",
+        element: <PrivateRouter><div>Project management page</div></PrivateRouter>,
       },
       {
-        path: "overview",
-        element: <Overview />,
+        path: "skills",
+        element: <PrivateRouter><div>Skills management page</div></PrivateRouter>,
+      },
+      {
+        path: "education&experience",
+        element: <PrivateRouter><div>Education & Experience management page</div></PrivateRouter>,
       },
     ],
   },
