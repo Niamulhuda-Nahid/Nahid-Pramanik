@@ -64,6 +64,20 @@ const router = createBrowserRouter([
     ],
   },
   {
+    path: "/admin",
+    element: <DashboardLayout />,
+    children: [
+      {
+        index: true,
+        element: <LogIn />,
+      },
+      {
+        path: "skills",
+        element: <div>nahid</div>
+      }
+    ]
+  },
+  {
     path: "/dashboard",
     element: <DashboardLayout />,
     children: [
